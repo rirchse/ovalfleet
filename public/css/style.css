@@ -1,0 +1,32 @@
+.small-box{margin-bottom: 20px}
+.small-box .inner{min-height: 180px}
+.item-status{min-height: 210px!important}
+.form-control{line-height: 20px!important; padding: 5px 10px;}
+.box-title{color:#800;}
+.toolbar-icon{font-size: 20px;padding-bottom: 5px;}
+.alert-section{padding-left: 15px}
+/*map*/
+#googleMap {
+    width: 100%;
+    height: 400px;
+}
+
+.form-control{padding-right: 0!important}
+.direct-chat-messages{min-height: 50px; max-height: 600px;}
+.direct-chat-name{font-size: 14px!important}
+.wysihtml5-sandbox{width: 100%!important}
+
+/*::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;*/
+
+.main-header .logo img{max-width: 230px; width: 100%}
+
+@media (min-width: 480px){
+.alert-section{margin-left:230px;background:#ecf0f5;padding-left:15px;}
+}
+@media (max-width: 490px){
+.alert-section{padding-left:5px;padding-right: 5px;}
+.skin-blue 	.wrapper{background: #eee}
+}

@@ -1,0 +1,218 @@
+form {
+  display: block;
+  padding: 0;
+  border: 0;
+  margin: 1em 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  clear: both;
+}
+
+fieldset {
+  display: block;
+  padding: 0;
+  border: 0;
+  margin: 1.5em 0;
+}
+
+form:first-child, 
+fieldset:first-child {margin-top: 0;}
+
+form:last-child, 
+fieldset:last-child {margin-bottom: 0;}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0;
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
+  font-size: 1.4em;
+  color: #333333;
+}
+
+label {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+
+
+/***  FORM INPUTS & BUTTONS  ***/
+
+/*input:focus, 
+textarea:focus, 
+select:focus {
+  outline-color: transparent;
+  outline-style: none;
+}*/
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+input[type="password"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="url"], 
+input[type="date"], 
+input[type="datetime-local"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="color"], 
+input[type="file"], 
+input[type="range"], 
+textarea, 
+select {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 0.25em;
+  font-size: 0.9em;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+input[type="password"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="url"], 
+input[type="date"], 
+input[type="datetime-local"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+textarea, 
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+  background: white;
+  font-size: 0.9em;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+select {height: 42px;}
+
+input[type="checkbox"],  
+input[type="radio"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="number"]:focus, 
+input[type="password"]:focus, 
+input[type="search"]:focus, 
+input[type="tel"]:focus, 
+input[type="url"]:focus, 
+input[type="date"]:focus, 
+input[type="datetime-local"]:focus, 
+input[type="month"]:focus, 
+input[type="time"]:focus, 
+input[type="week"]:focus, 
+textarea:focus, 
+select:focus {border-color: #2ccbf9;}*/
+
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"] {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  cursor: hand;
+  height: 2.8em;
+  padding: 0 24px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: white;
+  background: #aaa;
+}
+
+input[type="Submit"]:hover, 
+input[type="reset"]:hover, 
+input[type="button"]:hover {background: #bbb;}
+
+input[type="Submit"]:active, 
+input[type="reset"]:active, 
+input[type="button"]:active {
+  background: #555;
+  color: #eee;
+}
+
+
+
+/*  SEARCH FORM  */
+
+.search-form {position: relative;}
+
+input[type="text"].search-field {background: #f5f5f5;}
+
+input[type="text"].search-field:focus {background: white;}
+
+input[type="Submit"].search-submit {
+  display: block;
+  position: absolute;
+  z-index: 50;
+  top: 50%;
+  right: 0;
+  float: none;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  margin-top: -21px;
+  background: url(../images/icon-search.png) center no-repeat;
+  background-size: 1.5em;
+  opacity: 0.6;
+  cursor: pointer;
+  cursor: hand;
+}
+
+input[type="Submit"].search-submit:hover {
+  outline: none;
+  opacity: 1;
+}
+
+input[type="Submit"].search-submit:active {
+  background-color: rgba(0,0,0,0.025);
+  outline: none;
+}
+
+
+
+
+
+/*
+ *
+ * END OF
+ * STNDRD THEME 2.0
+ * CUSTOMIZABLE FORM STYLES
+ *
+ */

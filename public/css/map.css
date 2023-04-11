@@ -1,0 +1,12 @@
+﻿/*map*/
+#googleMap {
+    width: 100%;
+    height: 400px;
+}
+
+/*output box*/
+#output {
+    padding: 10px!important;
+    font-size: 1em;
+    margin: 20px auto;
+}

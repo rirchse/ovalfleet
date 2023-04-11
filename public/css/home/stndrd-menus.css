@@ -1,0 +1,501 @@
+.menu {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style:none;
+}
+
+.menu:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.menu > li {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.menu li ul li {display: none;}
+
+.menu > li > a {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.left-menu, 
+.menu-left {
+  float:left;
+  width: auto;
+}
+
+.right-menu, 
+.menu-left {
+  float: right;
+  width: auto;
+}
+
+
+
+@media screen and (min-width: 1025px) {
+
+/***  MAIN MENU  ***/
+
+.main-menu {float: right;}
+
+.main-menu, 
+.main-menu > ul {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  list-style:none;
+}
+
+.main-menu:after, 
+.main-menu > ul:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.main-menu > ul > li {
+  float: left;
+  display: table;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main-menu > ul > li > a {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  min-height: 1.5em;
+  padding: 15px 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #333;
+  webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.main-menu > ul > li.current-menu-item > a, 
+.main-menu > ul > li.current-page-parent > a, 
+.main-menu > ul > li.current-page-ancestor > a {
+  color: #19bceb;
+}
+
+.main-menu > ul > li:hover > a {
+  text-decoration: none;
+  color: #2ccbf9;
+}
+
+.left-menu, 
+.menu-left {
+  float:left;
+  width: auto;
+}
+
+.right-menu, 
+.menu-left {
+  float: right;
+  width: auto;
+}
+
+
+
+/***  DROPDOWN MENU  ***/
+
+.main-menu li > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 5003;
+  list-style: none;
+  background: #eee;
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.main-menu li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+  overflow: visible;
+}
+
+.main-menu li.double-wide > ul {width: 400px;}
+
+.main-menu li ul li {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main-menu > ul > li:nth-last-child(2) ul,
+.main-menu > ul > li:last-child ul, 
+.main-menu > ul > li.reverse ul {
+  left: auto;
+  right: 0;
+}
+
+.main-menu li.double-wide > ul > li {width: 50%;}
+
+.main-menu li.double-wide > ul > li:nth-child(odd) {border-right: 1px dotted rgba(255,255,255,0.25);}
+
+.main-menu li ul a {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  background: #eee;
+  color: #333;
+  text-align: left;
+  line-height: 1.5em;
+  webkit-transition: all 250ms ease-in-out;
+  -moz-transition: all 250ms ease-in-out;
+  -o-transition: all 250ms ease-in-out;
+  -ms-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.main-menu li ul li.sub-menu > a:after, 
+.main-menu li ul li.menu-item-has-children > a:after {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  display: block;
+  margin-top: -0.38em;
+  margin-left: -2em;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 0.7em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  content: "\f054";
+  webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.main-menu li ul li.current-page-ancestor > a, 
+.main-menu li ul li.current-page-parent > a, 
+.main-menu li ul li.current-menu-item > a {
+  color: #19bceb;
+  background-color: white;
+}
+
+.main-menu li:hover ul li > a:hover {
+  background: white;
+  text-decoration: none;
+  color: #2ccbf9;
+}
+
+
+/* Nested Dropdown */
+
+.main-menu li ul li ul {
+  top: 0;
+  left: 100%;
+}
+
+.main-menu > ul > li:nth-last-child(2) ul li ul,
+.main-menu > ul > li:last-child ul li ul, 
+.main-menu > ul > li.reverse ul li ul {
+  left: auto;
+  right: 100%;
+}
+
+
+
+/***  MOBILE MENU ELEMENTS  ***/
+
+.mobile-overlay {display: none;}
+
+.menu-button {display: none;}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+	
+/* Mobile Overlay */
+
+.mobile-overlay {
+  position: fixed;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5000;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(0,0,0,0.6);
+  cursor: pointer;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.mobile-overlay.active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu-button.active {
+  position: relative;
+  z-index: 5001;
+}
+
+
+
+/***  MOBILE MENUS  ***/
+
+.main-menu {
+  display: block;
+  float: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #333;
+  text-align: left;
+}
+
+.main-menu,  
+.mobile-menu-top {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 800ms ease-in-out;
+  -moz-transition: all 800ms ease-in-out;
+  -o-transition: all 800ms ease-in-out;
+  -ms-transition: all 800ms ease-in-out;
+  transition: all 800ms ease-in-out;
+}
+
+.mobile-menu-left, 
+.mobile-menu-right {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 5002;
+  max-height: none;
+  background: #333;
+  overflow: auto;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.mobile-menu-left {
+  left: -250px;
+  width: 250px;
+}
+
+.mobile-menu-right {
+  right: -250px;
+  width: 250px;
+}
+
+.mobile-menu-left.active {left: 0;}
+
+.mobile-menu-right.active {right: 0;}
+
+.mobile-menu-left::-webkit-scrollbar, 
+.mobile-menu-right::-webkit-scrollbar {
+  width: 10px;
+  background: #46494e;
+}
+
+.mobile-menu-left::-webkit-scrollbar-thumb, 
+.mobile-menu-right::-webkit-scrollbar-thumb {
+  border: 0;
+  background: #676d74;
+}
+
+.main-menu.active, 
+.mobile-menu-top.active {max-height: 1000px;}
+
+.main-menu ul {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: #333;
+}
+
+.main-menu li {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu > ul > li.menu-item-has-children:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  padding-top: 13px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  content: "\f078";
+  text-align: center;
+  cursor:pointer;
+  cursor:hand;
+}
+
+.main-menu > ul > li.menu-item-has-children.active:after {
+  color: white;
+  content: "\f077";
+}
+
+.main-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.main-menu li.current-menu-item > a {
+  color: #19bceb;
+  background: white;
+}
+
+.main-menu li a:hover {
+  background: #2ccbf9;
+  text-decoration: none;
+  color: white;
+}
+
+.main-menu .search-button {display: none;}
+
+
+/* Subpage Menu */
+
+.main-menu li ul, 
+.mobile-menu-top li ul {
+  display: block;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 400ms ease-out;
+  -moz-transition: all 400ms ease-out;
+  -o-transition: all 400ms ease-out;
+  -ms-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
+}
+
+.main-menu li.active ul, 
+.mobile-menu-top li.active ul {
+  max-height: 2000px;
+  -webkit-transition: all 1000ms ease-in;
+  -moz-transition: all 1000ms ease-in;
+  -o-transition: all 1000ms ease-in;
+  -ms-transition: all 1000ms ease-in;
+  transition: all 1000ms ease-in;
+}
+
+.mobile-menu-left li ul li ul,
+.mobile-menu-right li ul li ul {display: none;}
+
+}
+
+@media screen and (max-width: 420px) {
+
+.mobile-menu-left, 
+.mobile-menu-right {width: 75%;}
+
+.mobile-menu-left {left: -75%;}
+
+.mobile-menu-left.active {left: 0;}
+
+.mobile-menu-right {right: -75%;}
+
+.mobile-menu-right.active {right: 0;}
+
+}
+
+
+
+
+
+/*
+ *
+ * END OF
+ * STNDRD THEME 2.0
+ * CUSTOMIZABLE MENUS
+ *
+ */

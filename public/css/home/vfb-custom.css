@@ -1,0 +1,91 @@
+.visual-form-builder-container {padding: 0 !important;}
+
+.visual-form-builder fieldset:first-of-type {margin-top: -1.5em;}
+
+.visual-form-builder fieldset p:last-child {display: none;}
+
+.visual-form-builder ul {
+  display: block;
+  width: 102.5%;
+  padding: 0;
+  margin: 0;
+  margin-left: -2.5%;
+  list-style: none;
+  clear:both;
+}
+
+.visual-form-builder li {
+  display: inline-block;
+  width: 97.5%;
+  padding: 0;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  margin-left: 2.5%;
+  margin-right: -4px;
+  background: none;
+}
+
+.visual-form-builder li label {margin-bottom: 0.25em;}
+
+.visual-form-builder .phone {display: block;}
+
+.visual-form-builder .vfb-left-half, 
+.visual-form-builder .vfb-right-half {width: 47.5%;}
+
+.visual-form-builder .vfb-left-third, 
+.visual-form-builder .vfb-middle-third, 
+.visual-form-builder .vfb-right-third {width: 30.83%;}
+
+.visual-form-builder .vfb-left-two-thirds, 
+.visual-form-builder .vfb-right-two-thirds {width: 64.16%;}
+
+.visual-form-builder input[type="radio"],
+.visual-form-builder input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.ui-datepicker {
+  padding: 10px;
+  border: 1px solid #d2d2d2;
+  background: white;
+}
+
+.ui-datepicker-next {float: right;}
+
+.visual-form-builder .vfb-choice {font-weight: normal;}
+
+.visual-form-builder .vfb-select {margin-bottom: 5px;}
+
+.visual-form-builder .vfb-submit {margin-top: 1em;}
+
+.visual-form-builder .vfb-span {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.visual-form-builder .vfb-span label {
+  float: none;
+  width: auto;
+}
+
+.vfb-error {color: #900;}
+
+.vfb-form-success {color: #060;}
+
+@media screen and (max-width: 600px) {
+
+  .visual-form-builder ul {width: 100%;}
+  
+  .visual-form-builder li, 
+  .visual-form-builder .vfb-left-half, 
+  .visual-form-builder .vfb-right-half,
+  .visual-form-builder .vfb-left-third, 
+  .visual-form-builder .vfb-middle-third,
+  .visual-form-builder .vfb-right-third, 
+  .visual-form-builder .vfb-left-two-thirds,
+  .visual-form-builder .vfb-right-two-thirds {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+}

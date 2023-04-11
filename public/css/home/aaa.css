@@ -1,0 +1,581 @@
+.main_continer {
+width:1000px;
+margin:0px auto;
+
+	 }
+.home .wrapper{
+
+
+}
+.page-template-template-blog-php .wrapper{
+margin-top:30px;
+
+}
+.wrapper{
+	margin:0px auto;
+	margin-bottom:0px;
+	overflow:hidden;
+	position:relative;
+	height: auto;
+	padding:30px;
+	background-color:#F9F9F9;
+}
+
+.content_wide{
+	padding:0px;
+	overflow:hidden;
+}
+#container{
+    width: 940px;	
+}
+#content-extra-width{
+	margin:0 auto;
+	overflow:hidden;
+	width:105%;
+}
+/* Columns shortcode
+----------------------------------------------------------------------------------------------------*/
+
+.fullwidth{
+	width:100%;
+	float:left;
+	}
+	
+
+
+.one_half{
+	width:48.10%;
+	float:left;
+	margin-right:3.80%;
+	
+	
+	}
+
+.one_half_last{
+	width:48.10%;
+	float:right;
+	
+	}
+
+.one_third{
+	width:100%;
+	float:left;
+	margin-right:3.80%;
+	}
+
+.one_third_last{
+	width:30.70%;
+	float:right;
+	}
+
+
+.two_third{
+	width:65.40%;
+	float:left;
+	margin-right:3.80%;
+	}
+
+.two_third_last{
+	width:65.40%;
+	float:right;
+	display: table-cell;
+	}
+
+.one_fourth{
+	width:22.15%;
+	float:left;
+	margin-right:3.80%;
+
+	}
+
+.one_fourth_last{
+	width:22.15%;
+	float:right;
+	}
+	
+.two_fourth{
+	width:48.10%;
+	float:left;
+	margin-right:3.80%;
+	}
+	
+.three_fourth{
+	width:74.05%;
+	float:left;
+	margin-right:3.80%;
+	}
+
+.three_fourth_last{
+	width:74.05%;
+	float:right;
+	}
+
+
+.one_fifth{
+	width:16.96%;
+	float:left;
+	margin-right:3.80%;
+	}
+	
+.one_fifth_last{
+	width:16.96%;
+	float:right;
+		
+}
+
+.two_fifth{
+	width:33.92%;
+	float:left;
+	margin-right:3.80%;
+	}
+
+.three_fifth{
+	width:58.48%;
+	float:left;
+	margin-right:3.80%;
+	}
+
+	
+.four_fifth{
+	width:79.240%;
+	float:left;
+	margin-right:3.80%;
+}
+
+.four_fifth_last{
+	width:79.240%;
+	float:right;
+
+}
+
+
+* html .clearfix {
+
+} /* IE6 */
+
+.last{
+margin-right:0px;
+float:right;
+
+}
+
+*:first-child+html .clearfix {
+
+} /* IE7 */
+
+
+/* clearfix */
+
+.clear{
+	clear:both;
+	display:block;
+	height:0px;
+	width:100%;
+	visibility:hidden;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet (Portrait) */
+/* Width of 768px */
+@media only screen and (min-width: 768px) and (max-width: 1060px) {
+.main_continer, #header, .main_footer, footer, #home_main_slider, #myslidemenu .menu, .social_icons_text{
+    width: 688px;
+}
+
+
+.flex-caption h2{
+font-size:14px!important;
+}
+.content_wide {
+    width: 629px !important;
+}
+/* Top Menu section
+----------------------------------------------------------------------------------------------------*/
+.menu {
+    float: none;
+	margin:0 auto;
+}
+.menu2 .menu{
+	height:75px!important;
+	margin:0 auto;
+	font-size:1em;
+	text-transform:none;
+	width:1000px;
+	box-shadow: 0 3px 3px -3px #000;
+	background-color:#eee;
+	background-image: url(../images/transperant_gradient.png)!important;
+	background-repeat: repeat-x;
+	background-position: left top;
+	border-radius:3px;
+	padding:10px 5px;
+}
+
+
+
+#back-top {
+	display:none!important;
+}
+
+/* fles slider section
+----------------------------------------------------------------------------------------------------*/
+.flex-direction-nav .flex-prev {
+	left:52%!important;
+}
+.flex-direction-nav .flex-next{
+left:57%!important;
+}
+
+/* Portfolio section
+----------------------------------------------------------------------------------------------------*/
+.portfolio_extra{
+width:107%!important;
+}
+.portfolio_item_container{
+float:none!important;
+}
+
+.portfolio1 li {
+width:688px!important;
+}
+ .two_third_last .portfolio1 li, .two_third .portfolio1 li {
+ width:409px!important;
+}
+
+.portfolio2 li {
+	width:302px!important;
+}
+.two_third_last .portfolio2 li, .two_third .portfolio2 li {
+	width:194px!important;
+}
+
+.portfolio3 li {
+	width:193px!important;
+}
+.two_third_last .portfolio3 li, .two_third .portfolio3 li {
+	width:121px!important;
+}
+.portfolio4 li {
+	width:138px!important;
+	}
+.two_third_last .portfolio4 li, .two_third .portfolio4 li {
+	width:84px!important;
+}
+
+.item_thumb_gallery{
+width:184px!important;
+
+}
+
+#contact-form input{
+width:85%;
+}
+
+
+.catagory_news .news_thumb{
+width:30%;
+}
+#respond textarea{
+width:95%!important;
+}
+
+/* Default Gallery */
+.gallery-item {
+ width: 25%!important;
+ }
+ .gallery br{
+ display:none;
+ }
+
+}
+
+
+/* Mobile potrait width 320 */
+@media only screen and (max-width: 767px) {
+.main_continer, #header, .main_footer, footer, #home_main_slider, #myslidemenu .menu, .social_icons_text, .menu select, #top_header_right_section, .content_wide{
+    width:240px;
+}
+.home .wrapper{
+padding:15px!important;
+}
+.wrapper{
+padding:0px!important;
+}
+#header{
+border-bottom:none;
+}
+.search_box{
+width:100%;
+text-align:center;
+}
+#search_form{
+width:195px;
+margin:0 auto;
+}
+.search_box input{
+	padding:7px 2px!important;
+}
+
+#call_us{
+width:100%!important;
+right:0px!important;
+top:90px!important;
+text-align:center!important;
+ }
+
+.logo{
+	float:none!important;
+	text-align:center!important;
+}
+#container_top, #container_bot{
+display:none!important;
+}
+/* Top Menu section
+----------------------------------------------------------------------------------------------------*/
+.menu{float:none;}
+.menu ul li a, .menu2 ul li a{
+	padding: 7px 4px 5px 4px;
+	font-size:.7em;
+}
+.menu ul li ul li a, .menu2 ul li ul li a{
+	width:100px;
+	padding:5px 12px;
+
+}
+.menu ul, .menu2 ul{
+	display:none;
+}
+.menu select, .menu2 select{
+	display: block ;
+	}
+
+
+.sub_header {
+margin-bottom:20px;
+}
+/* Flex slider section
+----------------------------------------------------------------------------------------------------*/
+.flex-caption {
+    padding: 10px;
+	width: 53%;
+	bottom:2px!important;
+}
+
+.flex-caption h2 {
+line-height:1.2em!important;
+font-size:1em;
+}
+
+.flex-direction-nav .flex-prev {
+	left:39%!important;
+}
+.flex-direction-nav .flex-next{
+left:52%!important;
+}
+
+
+div.flex-caption {
+    display: none!important;
+}
+.teasertext h2{
+font-size:1.5em;
+
+}
+
+
+.title_desc{
+	display:none;
+}
+footer div, #bottom_footer_right ul{
+	text-align:center!important;
+}
+
+/* Portfolio section
+----------------------------------------------------------------------------------------------------*/
+.splitter{
+margin-top:30px!important;
+margin-bottom:30px;
+overflow:hidden;
+}
+.splitter li{
+display:block!important;
+}
+.splitter ul li a {
+float:none;
+display:block;
+width:100%;
+border:none!important;
+padding-left:0px!important;
+}
+
+.portfolio_extra {
+    width: 100%!important;
+}
+
+#list{
+height:auto!important;
+min-height:400px;
+
+}
+#list li, #list li img{
+	width:240px!important;
+}
+
+.metabox .comments{
+margin-left:18px;
+}
+#respond textarea{
+width:92%!important;
+}
+
+.gallery-item {
+ width: 100%!important;
+ }
+
+/* Columns
+----------------------------------------*/
+.one_half, .one_half_last, .one_third, .one_third_last, .two_third, .two_third_last, .one_fourth, .one_fourth_last, .two_fourth, .two_fourth_last, .three_fourth, .three_fourth_last, .one_fifth, .one_fifth_last, .two_fifth, .two_fifth_last, .three_fifth, .three_fifth_last, .four_fifth, .four_fifth_last {
+ width: 100%;
+margin: 0 0 30px;
+}
+
+.catagory_news .news_thumb{
+width:30%;
+}
+
+#back-top {
+display:none!important;
+}
+
+
+/* Gallery
+----------------------------------------------------------------------------------------------------*/
+
+.item_thumb_gallery {
+width:119px;
+}
+
+ul.kaya_gallery li p {
+display:none!important;
+}
+
+
+/* Contact Section
+----------------------------------------------------------------------------------------------------*/
+#contact-form input, #contact-form textarea{
+width:218px;
+}
+#contact-form .one_third, #contact-form .one_third_last{
+margin-bottom:0px;
+}
+
+.testimonial_thumb strong{
+font-size:11px;
+}
+h3{
+font-size:100%;
+line-height:26px;
+}
+ul.news_items li{
+margin-bottom:50px;
+}
+
+.main_footer, footer{
+padding:30px 10px!important;
+}
+}
+
+/* Mobile landscape 480
+----------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.main_continer, #header, .main_footer, footer, #home_main_slider, #myslidemenu .menu, .social_icons_text, .menu select, #top_header_right_section{
+    width:380px;
+}
+#container_top, #container_bot{
+display:none;
+}
+.front .wrapper{
+padding:30px!important;
+}
+.wrapper{
+padding:0px!important;
+}
+
+/* Flex slider section
+----------------------------------------------------------------------------------------------------*/
+.flex-caption p{
+display:block!important;
+}
+
+.flex-direction-nav .flex-prev {
+	left:40%!important;
+}
+.flex-direction-nav .flex-next{
+left:48.4%!important;
+}
+
+/* Portfolio section
+----------------------------------------------------------------------------------------------------*/
+.splitter{
+margin-top:30px!important;
+}
+.portfolio_extra {
+    width: 100%!important;
+}
+
+#list li, #list li img{
+	width:380px!important;
+}
+
+/* Gallery
+----------------------------------------------------------------------------------------------------*/
+
+.item_thumb_gallery {
+width:187px !important;
+}
+
+ul.kaya_gallery li p {
+display:none!important;
+}
+.gallery-item {
+ width: 50%!important;
+ }
+ .gallery br {
+ display:none;
+ }
+#contact-form input, #contact-form textarea{
+width:358px;
+}
+
+
+h3{
+font-size:130%;
+}
+
+}
